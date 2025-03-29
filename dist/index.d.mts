@@ -1,2 +1,3 @@
+declare const Index: () => string;
 
-export {  }
+export { Index as default };
