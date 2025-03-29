@@ -7,9 +7,13 @@ function createApiClass<T extends ApiConfig>(list: T) {
     return class Api {
         constructor() {
             Object.keys(list).forEach((key) => {
-                (this as any)[key] = async (params?: any) => {
-                    return this.request(list[key].method, list[key].url, list[key].authenticated);
-                };
+                if (list[key]) {
+                    (this as any)[key] = async (params?: any) => {
+                        return this.request(list[key].method, list[key].url, list[key].authenticated);
+                    };
+                } else {
+                    console.error(`A chave ${key} está indefinida no objeto api.`);
+                }
             });
         }
     
