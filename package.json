@@ -17,5 +17,9 @@
     "tslib": "^2.8.1",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "react-query": "^3.39.3"
   }
 }
