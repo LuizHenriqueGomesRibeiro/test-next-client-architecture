@@ -84,8 +84,13 @@ var PrimitiveClient = createPrimitiveClient();
 // src/api/index.ts
 var BASE_URL = "https://dog.ceo/api";
 var api = {
-  requestc: {
+  breeds_image_random: {
     url: "breeds/image/random",
+    authenticated: false,
+    method: "get"
+  },
+  breed_hound_images: {
+    url: "breed/hound/images",
     authenticated: false,
     method: "get"
   }

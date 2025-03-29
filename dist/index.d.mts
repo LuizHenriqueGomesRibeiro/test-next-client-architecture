@@ -24,8 +24,13 @@ interface ApiClientResourcesProps<T = any, K = any> {
 }
 
 declare const endpoints: {
-    readonly requestc: {
+    readonly breeds_image_random: {
         readonly url: "breeds/image/random";
+        readonly authenticated: false;
+        readonly method: "get";
+    };
+    readonly breed_hound_images: {
+        readonly url: "breed/hound/images";
         readonly authenticated: false;
         readonly method: "get";
     };
