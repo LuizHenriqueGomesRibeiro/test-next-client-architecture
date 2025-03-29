@@ -1,5 +1,5 @@
 {
-  "name": "test-next-client-architecture",
+  "name": "@caucolum/test-next-client-architecture",
   "version": "1.0.1",
   "main": "index.js",
   "scripts": {
